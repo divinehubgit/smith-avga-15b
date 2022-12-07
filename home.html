@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="menu-layout">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">Products & Services</div>
+      <div class="menu-item"><a href="contactus.html">Contact Us</a></div>
+    </div>
+
+    <div class="column-layout">
+      <div class="main-column">
+        <h2>Smith Drones</h2>
+        <p>
+        We are a new and upcoming company dedicated to drones and other rc products. Our goal is to make sure you can get the best of the best, in a convient way. 
+        </p>
+       
+      </div>
+
+      <div class="sidebar-two">
+        <img
+          id="logo"
+          src="https://cdn.glitch.global/36da7c63-5cf7-4bb1-b73b-aa0c404de95c/logo.png?v=1668628024843"
+        />
+        <div>
+          <ul>
+            <li>Drones</li>
+            <li>Drone parts</li>
+            <li>RC products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="specialoffers" class="call-outs-container">
+      <div class="call-out">
+        <h4>Special Offer 1</h4>
+        <p>
+       We are offering a limited time offer, for a buy on get on free on any set of drone blades!
+        </p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="call-out">
+        <h4>Special Offer 2</h4>
+        <p>
+          We are also offering free shipping for any orders above $75!
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <button id="hidebutton" onclick="hideAds()">Hide Offers</button>
+    </div>
+
+    <script>
+      function hideAds() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+        x.style.display = "none";
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
